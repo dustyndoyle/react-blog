@@ -15,7 +15,7 @@ module.exports = React.createClass({
         var apiUrl = rest_data.api_url;
 
         jQuery.get( apiUrl + '/wp/v2/posts' ).done( function( data ) {
-            self.setState( {posts: data} )
+            self.setState({ posts: data })
         });
     },
 
